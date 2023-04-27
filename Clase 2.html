@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos multimedia</title>
+    <!-- Favicon es el icono que aparece en la pestaña del navegador -->
+    <link rel="icon" type="image/x-icon" href="img/code-solid.svg">
+</head>
+<body>
+    <h1>IMAGENES</h1>
+    <!-- Acceder a una imagen desde un url -->
+    <!-- alt permite darle un nombre a la imagen, permitiendo la accesibilidad en los navegadores -->
+    <h2>Esta es mi primer imagen desde una url</h2>
+    <img src="https://www.dogalize.com/wp-content/uploads/2017/06/La-sverminazione-e-la-pulizia-del-cucciolo-del-cane-2-800x400-800x400.jpg" alt="perros" >
+    <!-- Acceder a una  imagen desde un archivo local -->
+    <h2>Esta es mi primer imagen desde un archivo</h2>
+    <img src="img/gatitos.jpg" alt="gatos">
+    <!-- Modificar el tamaño de una imagen-- width para modificar el tamaño horizontal -- height para modificar el tamaño vertical -->
+    <h2>Esta es mi primer imagen modificada</h2>
+    <img src="img/gatitos.jpg" alt="gatos" width="400" height="250">
+    <hr>
+    <!-- Agregar iconos -->
+    <h1>FIGURAS</h1>
+    <!-- Agregar imagen con una descripcion, figras -->
+    <figure>
+        <img src="img/gatitos.jpg" alt="gatos" width="400" height="250">
+        <figcaption>Mi primer imagen con descripcion</figcaption>
+    </figure>
+    <hr>
+    <!-- Añadir un video con cierta dimension -->
+    <h1>VIDEOS</h1>
+    <video width="300" height="200" controls>
+        <source src="videos/recetaFacil.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <h1>Audios</h1>
+    <!-- reproducir un audio definiendo el tipo de extension que tiene-->
+    <!-- Utiliza el control de audio por defecto del navegador -->
+    <audio controls> 
+        <source src="audios/sound.mp3" type="audio/mp3">
+    </audio>
+    <audio src="audios/sound.mp3" controls></audio>
+    <!-- Controls es un atributo booleano que cuando esta en la etiqueta quiere decir que esta activo el boton -->
+    <p>Son etiquetas de linea y con controls aparece el reproductor del audio y preload carga el audio antes de que se ejecute para que cuando el usuario de click ya este todo cargado</p>
+    <audio src="media/-_PARRANDA_VALLENATA_VOL_2_-_FULL_AUDIO.mp3" controls preload=""></audio>
+    <!-- el atributo poster pone una caratula al video -->
+    <video src="media/videofinanzapp-mejor.mp4" controls preload loop poster="img/dua-lipa.jpg"></video>
+    <hr>
+    <h1>IFRAME</h1>
+    <!-- Añadir video desde youtube -->
+    <h3>PDF's</h3>
+    <iframe height="500px" width="600px" src="media/MODULO 3.pdf" frameborder="0"></iframe>
+    <hr>
+    <iframe src="https://www.youtube.com/embed/cbSrsYiRamo" width="700px" height="500px" title="Video de comidaBackend Development explained in 2 minutes">
+    </iframe>
+    
+</body>
+</html>

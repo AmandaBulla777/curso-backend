@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form>
+<label for="name"> Nombre:</label>
+<input type="text"id="name" placeholder="ingrese su nombre"autocomplete="off">
+<label for="pass">contraseña:
+</label>
+<input type="password"id="pass" placeholder="ingrese su contraseña">
+<br>
+<laber for="mail">Correo</laber>
+<!-- input de tipo email me recibe un correo electronico -->
+<input type="email" id="email" placeholder="ingrese su correo"required onpaste="return false">
+<input type="submit">
+<br>
+<!-- checkbox permite tener una casilla de verificacion -->
+<input type="checkbox">
+<label> Acepto terminos y condiciones</label>
+<br>
+<h2> seleccione su lenguaje favorito</h2>
+<!-- radio permite seleccionar una opcion -->
+<input type="radio" name="lenguje-php" value="php">
+<label>PHP</label>
+<br>
+<input type="radio" name="">
+
+<br>
+<input type="date">
+<br>
+<input type="submit">
+<br>
+<label>ingrese su fecha de nacimientp</label>
+<input type="date">
+<br>
+<label> ingrese su color favorito</label>
+<input type="color">
+<br>
+<input type="button" value="Boton 1">
+<br>
+
+<ladel for="age">Edad</ladel>
+<input type="number"id="age"placeholder="ingrese su edad">
+<br>
+<!-- Activa una Busquedad en el sitio -->
+<label>Buscar</label>
+<input type="search"placeholder="busquedad"
+>
+<br>
+<!-- seleccionar un archivo o subirlo -->
+<input type="file">
+<br>
+<!-- me crea un cuadro de texto  -->
+<label for="commentaros">deja tus comentarios</label>
+<textarea id="comentarios"cols="30" rows="10"
+maxlength="100" minlength="5" placeholder="Dejar tus comentarios:)"></textarea>
+<br>
+<!-- el campo que envia el formulario-->
+
+<input type="submit">
+<br>
+
+
+
+
+<br>
+
+    </form>
+</body>
+</html>
